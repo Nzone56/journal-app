@@ -47,7 +47,7 @@ export const NoteView = () => {
    useEffect(() => {
       console.log("console.log()");
        if (messageSaved === "Title can't be empty") {
-        
+    
          Swal.fire("Updated failed", messageSaved, "error");
        } 
    }, [messageSaved]);

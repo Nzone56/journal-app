@@ -45,7 +45,7 @@ export const startLoadingNotes = () => {
 
 export const startSaveNote = () => {
     return async( dispatch, getState ) => {
-         dispatch( setSaving( ) )
+         await dispatch( setSaving( ) )
          
          const { uid } = getState().auth; 
          const { active: note} = getState().journal; 
